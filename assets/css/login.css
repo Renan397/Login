@@ -1,0 +1,263 @@
+/* Font Import */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+* {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+/* Menu */
+#menu-h{
+  position: fixed;
+  background: radial-gradient(circle, #272a2e 85%, #45484c 92%);
+  height: 70px;
+  width: 100%;
+  z-index: 3;
+}
+#menu-content {
+  display: flex;
+  background: radial-gradient(circle, #272a2e 85%, #45484c 92%);
+  flex-direction: row;
+}
+
+#menu-h ul {
+  max-width: 80%;
+  list-style: none;
+  padding: 0;
+}
+
+#menu-h ul li {
+  display: inline;
+}
+
+#menu-h ul li a {
+  color: #FFF;
+  padding: 22px;
+  display: inline-block;
+  text-decoration: none;
+  transition: background .4s;
+}
+
+#logo_menu {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 20px;
+}
+
+#menu-h ul li:first-child {
+  float: left;
+  background-color: #596068;
+}
+
+/* Bordered form */
+form {
+  border: 3px solid #d1cfcf;
+  padding: 30px;
+}
+
+#titulo_login {
+  border-bottom: 4px #33373e double; 
+  padding-bottom: 10px;
+  width: 30%;
+}
+
+#img_iconeuser {
+  height: 100px;
+  width: 100px;
+}
+
+/* Full-width inputs */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border-radius: 5%;
+  border: none;
+  cursor: pointer;
+  width: 10%;
+  transition: 0.5s;
+}
+
+/* Add a hover effect for buttons */
+button:hover {
+  opacity: 0.8;
+  transition: 0.5s;
+}
+
+/* Extra style for the cancel button (red) */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+/* Center the avatar image inside this container */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+/* Avatar image */
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+/* Add padding to containers */
+.container {
+  padding: 16px;
+}
+
+/* The "Forgot password" text */
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+    display: block;
+    float: none;
+  }
+  .cancelbtn {
+    width: 100%;
+  }
+} 
+
+/* Rodapé */
+#myFooter {
+  background-color: #272a2e;
+  color: white;
+}
+
+#myFooter .row {
+  margin-bottom: 60px;
+}
+
+#myFooter .info{
+  text-align: justify; 
+  color: #afb0b1;
+}
+
+#myFooter ul {
+  list-style-type: none;
+  padding-left: 0;
+  line-height: 1.7;
+}
+
+#myFooter h5 {
+  font-size: 18px;
+  color: white;
+  font-weight: bold;
+  margin-top: 30px;
+}
+
+#myFooter .logo{
+  margin-top: 10px;
+}
+
+#myFooter .second-bar .logo a{
+  color:white;
+  font-size: 28px;
+  float: left;
+  font-weight: bold;
+  line-height: 68px;
+  margin: 0;
+  padding: 0;
+}
+
+#myFooter a {
+  color: #d2d1d1;
+  text-decoration: none;
+}
+
+#myFooter a:hover,
+#myFooter a:focus {
+  text-decoration: none;
+  color: white;
+}
+
+#myFooter .second-bar {
+  text-align: center;
+  background-color: #33373e;
+  text-align: center;
+  padding-top: 15px;
+}
+
+#myFooter .second-bar a {
+  font-size: 22px;
+  color: #9fa3a9;
+  padding: 10px;
+  transition: 0.2s;
+  line-height: 68px;
+}
+
+#myFooter .second-bar a:hover {
+  text-decoration: none;
+}
+
+#myFooter .social-icons {
+  float:right;
+}
+
+
+#myFooter .facebook:hover {
+  color: #0077e2;
+}
+
+#myFooter .instagram:hover {
+  color: purple;
+}
+
+#myFooter .twitter:hover {
+  color: #00aced;
+}
+
+@media screen and (max-width: 767px) {
+  button {
+    width: 30%;
+  }
+
+  #myFooter {
+      text-align: center;
+  }
+
+  #myFooter .info{
+      text-align: center;
+  }
+}
+
+/* CSS utilizado para posicionar o rodapé no final da página. */
+/* Você pode remover isso. */
+
+html{
+  height: 100%;
+}
+
+body{
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: column;
+  -webkit-flex-direction: column;
+  height: 100%;
+}
+
+.content{
+ flex: 1 0 auto;
+ -webkit-flex: 1 0 auto;
+ min-height: 200px;
+}
+
+#myFooter{
+ flex: 0 0 auto;
+ -webkit-flex: 0 0 auto;
+}
